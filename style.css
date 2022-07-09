@@ -1,0 +1,205 @@
+.main-page {
+    color: white;
+    background-repeat: no-repeat;
+    background-image: url("../hero-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: gray;
+    background-blend-mode: multiply;
+    margin: 0;
+    padding: 0;
+}
+body:not(.main-page){
+  color:white;
+  margin:0;
+  padding:0;
+  background-color:black;
+}
+.main-page h1{
+    text-align: center;
+}
+input, select{
+/*     border-radius: 2rem;
+    background-color: rgb(219, 219, 219); */
+    padding: 0.4rem 0;
+    width:300px;
+}
+
+.education{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    row-gap: 10px;
+    padding-left: 20px;
+
+}
+.nav ul{
+    /* display: inline-block; */
+    background-color:#112;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav li{
+    display: inline-block;
+    padding: 20px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.list li a:hover{
+    color: black;
+}
+.nav li:hover{
+    background-color: green;
+
+}
+.picture{
+    border-radius: 150px;
+    border:5px solid #112;
+    
+}
+/* contact-me */
+.contact-back{
+  display:flex;
+}
+.contact-list label{
+  align-self: flex-start;
+}
+.contact{
+  text-align: center;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:50px;
+    margin:400px;
+    margin-top:100px;
+    margin-buttom:300px;
+    border-radius:2rem;
+    background-color:#112;
+}
+
+
+/*register*/
+.signup-back{
+  display:flex;
+}
+.not-signin{
+    text-align: center;
+    padding-top: 20px;
+}
+.register-list{
+  display:flex;
+  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+  padding:50px;
+  margin:400px;
+  margin-top:100px;
+  margin-buttom:300px;
+  border-radius:2rem;
+  background-color:#112;
+}
+.register-list label{
+  align-self:flex-start
+}
+.signup{
+    text-align: center;
+}
+
+
+/*login*/
+.login-list {
+    display:flex;
+    text-align: center;
+    flex-direction:column;
+    padding:50px;
+    margin:400px;
+    margin-top:100px;
+    margin-buttom:300px;
+    border-radius:2rem;
+    background-color:#112;
+}
+.login-list label{
+  align-self:flex-start;
+}
+.login-back{
+  display:flex;
+}
+.signin div, .signin{
+    text-align: center;
+}
+.login-list div button{
+  margin-top:20px;
+}
+.not-signup{
+  text-align:center;
+}
+
+.both-calculator{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+/*calculator with table*/
+ table.calculator{
+   margin-left: auto;
+   margin-right: auto;
+}
+.cal{
+  padding: 2rem;
+  margin: 4rem;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #112;
+  border-radius:2rem;
+}
+.calculator button, .flex-cal button{
+    width: 65px;
+    height: 60px;
+    background-color: rgb(2, 2, 34);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.search {
+    text-align: center;
+}
+.search input{
+    height: 35px;
+}
+.blue button{
+    background-color: skyblue;
+    color: white;
+    font-size:larger;
+    text-align: center;
+    border-radius: 2rem;
+}
+button.blue{
+    background-color: skyblue;
+    color: white;
+    font-size:larger;
+    text-align: center;
+    border-radius: 2rem;
+}
+ .heading{
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*calculator with flexbox*/
+.second-heading{
+    text-align: center;
+    padding-top: 50px;
+}
+.flex-cal div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
