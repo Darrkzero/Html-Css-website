@@ -21,20 +21,43 @@ body:not(.main-page){
 input, select{
 /*     border-radius: 2rem;
     background-color: rgb(219, 219, 219); */
-    padding: 0.4rem 0;
-    width:300px;
+    padding:14px;
+/*     width: 100%; */
 }
 
+.button-signin, .button-signup{
+  margin-top:2rem;
+  background-color:#00ADB5 ;
+/*   padding: 1rem 8rem; */
+  width: 50%;
+  height: 2rem;
+  border-radius: 2rem;
+  border:0;
+}
+div label, label{
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+button:hover{
+  background-color: #047f86;
+}
 .education{
     display: grid;
     grid-template-columns: 300px 300px;
     row-gap: 10px;
     padding-left: 20px;
-
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color:#222831 ;
+}
+header img{
+  background-color: #222831;
 }
 .nav ul{
     /* display: inline-block; */
-    background-color:#112;
+/*     background-color:#112; */
     margin: 0;
     padding: 0;
     
@@ -51,14 +74,16 @@ input, select{
     color: black;
 }
 .nav li:hover{
-    background-color: green;
-
+    background-color:#00ADB5;
 }
 .picture{
     border-radius: 150px;
     border:5px solid #112;
-    
 }
+.already{
+  margin-top:0.2rem;
+}
+
 /* contact-me */
 .contact-back{
   display:flex;
@@ -71,36 +96,43 @@ input, select{
 }
 .contact-list{
     display: flex;
+    width: 45%;
     flex-direction: column;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     padding:50px;
-    margin:400px;
     margin-top:100px;
-    margin-buttom:300px;
+    margin-bottom: 100px;
     border-radius:2rem;
-    background-color:#112;
+    background-color:#222831;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 
 /*register*/
-.signup-back{
+/* .signup-back{
   display:flex;
-}
+} */
 .not-signin{
     text-align: center;
     padding-top: 20px;
+    
 }
 .register-list{
   display:flex;
+  width:45%;
+  height:100%;
   flex-direction:column;
   margin-left: auto;
   margin-right: auto;
+  text-align:left;
   padding:50px;
-  margin:400px;
   margin-top:100px;
-  margin-buttom:300px;
+  margin-bottom: 100px;
   border-radius:2rem;
-  background-color:#112;
+  background-color:#222831;
+  box-sizing: border-box;
 }
 .register-list label{
   align-self:flex-start
@@ -113,14 +145,17 @@ input, select{
 /*login*/
 .login-list {
     display:flex;
-    text-align: center;
+    width: 45%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction:column;
     padding:50px;
-    margin:400px;
     margin-top:100px;
-    margin-buttom:300px;
+    margin-bottom: 100px;
     border-radius:2rem;
-    background-color:#112;
+    background-color:#222831;
+    box-sizing: border-box;
 }
 .login-list label{
   align-self:flex-start;
@@ -131,13 +166,22 @@ input, select{
 .signin div, .signin{
     text-align: center;
 }
-.login-list div button{
-  margin-top:20px;
-}
 .not-signup{
   text-align:center;
 }
 
+@media (max-width:800px){
+  .contact-list, .register-list, .login-list{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    margin: 0;
+  }
+  
+}
+
+/* calculator */
 .both-calculator{
   display: flex;
   flex-direction: row;
@@ -157,7 +201,7 @@ input, select{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #112;
+  background-color: #222831;
   border-radius:2rem;
 }
 .calculator button, .flex-cal button{
@@ -202,4 +246,45 @@ button.blue{
     text-align: center;
     display: flex;
     flex-direction: row;
+}
+
+footer{
+  margin: 0;
+  border: 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #222831;
+  padding: 2rem 0;
+}
+.social-media{
+  font-size: 40px;
+  color:white;
+  text-align: center;
+}
+.social-media li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 2rem;
+}
+.facebook:hover{
+  color: #3838e5;
+}
+.twitter:hover{
+  color: #1DA1F2;
+}
+.linkedin:hover{
+  color: #1DA1F2 ;
+}
+.instagram:hover{
+  color: #cd486b;
+}
+.youtube:hover{
+  color: red ;
+}
+.github:hover{
+  color:#6e5494 ;
+}
+.logo{
+  text-align: center;
 }

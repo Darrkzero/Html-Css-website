@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="nav">
+    <header>
+      <img src="logo.png">
+      <nav class="nav">
         <ul class="list">
           <li><a href="index.html">Home page</a></li>
           <li><a href="about.html">About me</a></li>
@@ -17,7 +20,8 @@
           <li><a href="login.html">Login </a></li>
           <li><a href="calculator.html">calculator</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
     <main class="login-back" >
        
 
@@ -32,12 +36,31 @@
           <input type="password" name="password" id="password" required>
         
         <div class="not-signup">
-          <button>sign in</button><br>
-          If you don't have an account <a href="./register.html" >sign up</a>
+          <button class="button-signin">sign in</button><br>
+          <div class="already">
+            If you don't have an account <a href="./register.html" >sign up</a>
+          </div>
         </div>
       </form>
     </main>
+    <footer>
+      <nav class="social-media">
+        <ul>
+          <li class="facebook"><i class="fa fa-facebook-square"></i></li>
+          <li class="github"><i class="fa fa-github"></i></li>
+          <li class="linkedin"><i class="fa fa-linkedin-square"></i></li>
+          <li class="twitter"><i class="fa fa-twitter"></i></li>
+          <li class="instagram"><i class="fa fa-instagram"></i></li>
+          <li class="youtube"><i class="fa fa-youtube-square"></i></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="logo.png"><br>
+        Copyright © 2022 MGBEMENA, Inc.
+      </div>
      
+      
+    </footer>
 
 </body>
 </html>
